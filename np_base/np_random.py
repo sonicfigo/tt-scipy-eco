@@ -50,3 +50,10 @@ indices = np.random.permutation(len(list1))  # 与list个数一样的，index，
 print(indices)
 print(list1[indices[:-5]])  # 可以作为train数据的index
 print(list1[indices[-5:]])  # 可以作为test数据的index
+
+print('\n===================np.random.normal')
+# loc=0.0, scale=1.0, size=(2, 1)
+print(np.random.normal(size=2))
+
+# loc=0.0, scale=1.0, size=(2, 1)
+print(np.random.normal(size=(2, 1)))

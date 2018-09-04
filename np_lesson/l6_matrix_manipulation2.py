@@ -19,6 +19,7 @@ import numpy as np
 # A = np.arange(2, 14).reshape(3, 4)
 A = np.arange(-14, -2).reshape(3, 4)
 A_REVERSE = np.arange(14, 2, -1).reshape(3, 4)
+print('\n===================原值A')
 print(A)
 
 print('\n大小值')
@@ -67,6 +68,10 @@ print('axis参数 0/列-垂直方向')
 print(np.mean(A, axis=0))
 print('axis参数 1/行-水平方向')
 print(np.mean(A, axis=1))
+
+print('\nunique')
+print(np.unique(A))
+
 
 print('\n=====================原数据')
 print(A)

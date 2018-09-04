@@ -10,8 +10,13 @@ ravel 更快，更轻
 import numpy as np
 
 b1 = np.array([[0, 1, 2, 3, 4], [5, 6, 7, 8, 9]])
+print('\n===================b1')
+print(b1)
+
 b1_flatten = b1.flatten()
+print('\n===================b1_flatten')
 print(b1_flatten)
+
 b1[0][1] = 111
 print(b1_flatten)
 assert b1_flatten.flags.owndata is True

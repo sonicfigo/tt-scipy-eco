@@ -72,3 +72,5 @@ print('max')
 print(np.max(a3))
 print(np.max(a3, axis=0))
 print(np.max(a3, axis=1))
+
+

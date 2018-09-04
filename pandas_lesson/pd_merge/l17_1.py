@@ -22,11 +22,11 @@ print('\n使用key合并(单主键)')
 res = pd.merge(left, right, on='key')
 print(res)
 
-print('\n原数据')
-print(left)
-print(right)
-
 print('\n===================numpy 的c_用法')
 print('np.c_是按行连接两个矩阵，就是把两矩阵左右相加，要求行数相等，类似于pandas中的merge()。\n')
 print(np.c_[left, right])
 print(np.c_[left, right].shape)  # (4, 6)
+
+print('\n原数据')
+print(left)
+print(right)
